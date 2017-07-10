@@ -15,7 +15,7 @@ fun Application.main() {
 
     routing {
         get("/{...}") {
-            call.respondText("You should override Routing.service()")
+            call.respondText("Catchall endpoint")
         }
 
         get("/somewhere-else") {
