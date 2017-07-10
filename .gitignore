@@ -1,5 +1,11 @@
 .*.sw*
-.idea
+
 .gradle
+
+.idea/*
+!.idea/runConfigurations
+!.idea/runConfigurations/*
 *.iml
+
 build
+classes
