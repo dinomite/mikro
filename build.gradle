@@ -26,7 +26,7 @@ ext.ktorVersion = '0.3.3'
 ext.logbackVersion = '1.2.3'
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlinVersion"
 
     compile "org.jetbrains.ktor:ktor-core:$ktorVersion"
     compile "org.jetbrains.ktor:ktor-netty:$ktorVersion"

@@ -13,8 +13,19 @@ fun Application.main() {
     install(DefaultHeaders)
     install(CallLogging)
     install(Routing) {
-        get("/") {
-            call.respondText("Hallo, World!")
-        }
+        service()
+    }
+}
+
+/**
+ * Override this to define your own endpoints
+ */
+private fun Routing.service() {
+    get("/{...}") {
+        call.respondText("You should override Routing.service()")
+    }
+
+    get("/somewhere-else") {
+        call.respondText("This hit /somewhere-else")
     }
 }
